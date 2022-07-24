@@ -1,0 +1,48 @@
+<!-- ========== Left Sidebar Start ========== -->
+<div class="leftside-menu">
+    
+    <!-- LOGO -->
+    <a href="{{ site.url }}" class="logo text-center logo-light">
+        <span class="logo-lg">
+            <img src="{{ '/public/images/logo.png' | absolute_url }}" alt="" height="16">
+        </span>
+        <span class="logo-sm">
+            <img src="{{ '/public/images/logo.png' | absolute_url }}" alt="" height="16">
+        </span>
+    </a>
+   
+    <div class="h-100" id="leftside-menu-container" data-simplebar>
+
+        <!--- Sidemenu -->
+        <ul class="side-nav">
+        	{% for category in site.categories %}
+        	<li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebar{{ category[0] | slugify}}" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+                    <i class="uil-clipboard-alt"></i>
+                    <span> {{ category[0]}} </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebar{{ category[0] | slugify}}">
+                    <ul class="side-nav-second-level">
+                    	{% assign pages_list = category[1] %}
+						{% for post in pages_list %}
+						{% if post.title != null %}
+                        <li>
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </li>
+                        {% endif %}  
+            			{% endfor %}
+			        </ul>
+                </div>
+            </li>
+        	{% endfor %}
+        </ul>
+        <!-- End Sidebar -->
+
+        <div class="clearfix"></div>
+
+    </div>
+    <!-- Sidebar -left -->
+
+</div>
+<!-- Left Sidebar End -->

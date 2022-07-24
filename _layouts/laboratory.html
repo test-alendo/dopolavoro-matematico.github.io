@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="card">
+  
+  <div class="card-body">
+	  <dl class="row mb-0">
+	    <dt class="col-sm-3">Data di pubblicazione:</dt>
+	    <dd class="col-sm-9"><span class="post-date">{{ page.date | date_to_string }}</span></dd>
+	    <dt class="col-sm-3">Data laboratorio:</dt>
+	    <dd class="col-sm-9"><span class="post-date">{{ page.lab_date | date_to_string }}</span></dd>
+	    <dt class="col-sm-3">Autore/Autori:</dt>
+	    <dd class="col-sm-9">{{ page.author }}</dd>
+	    <dt class="col-sm-3">Pubblico:</dt>
+	    <dd class="col-sm-9">{{ page.target }}</dd>
+	    <dt class="col-sm-3">Durata:</dt>
+	    <dd class="col-sm-9">{{ page.duration }}</dd>
+	  </dl>
+	</div>
+</div>
+
+<div class="card">
+	<div class="card-body">
+	{{ content }}
+	</div>
+</div>

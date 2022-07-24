@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box">
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Wikilabs</a></li>
+                    {% if page.category != empty %}
+                    <li class="breadcrumb-item"><a href="/{{ page.categories[0] | slugify }}">{{ page.categories[0] }}</a></li>
+                    {% endif %}
+                    <li class="breadcrumb-item active">{{ page.title }}</li>
+                </ol>
+            </div>
+            <h4 class="page-title">{{ page.title }}</h4>
+        </div>
+    </div>
+</div>

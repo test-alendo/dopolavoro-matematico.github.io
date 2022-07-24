@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	{% include title-meta.html %}
+        {% include head-css.html %}
+
+    </head>
+
+        {% include body.html %}
+        <!-- Begin page -->
+        <div class="wrapper">
+            {% include left-sidebar.html %}
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+                	{% include topbar.html %}
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        
+                        <!-- start page title -->
+                        {% include page-title.html %}
+                        <!-- end page title -->
+                        
+						{{ content }}                        
+                    
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+				{% include footer.html %}
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+        <!-- bundle -->
+        <script src="{{ '/public/js/vendor.min.js' | absolute_url }}"></script>
+        <script src="{{ '/public/js/app.min.js' | absolute_url }}"></script>
+       
+    </body>
+</html>

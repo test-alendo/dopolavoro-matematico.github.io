@@ -1,0 +1,77 @@
+---
+layout: default
+title: Home
+---
+  
+  <div class="row">
+      <div class="col-12">
+          <h4 class="mb-4">Horizontal Card</h4>
+      </div> <!-- end col -->
+  </div>
+  <!-- end row -->
+
+  <div class="row">
+      <div class="col-lg-6">
+          <div class="card">
+              <div class="row g-0 align-items-center">
+                  <div class="col-md-4">
+                      <img src="assets/images/small/small-4.jpg" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                      <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div> <!-- end card-body-->
+                  </div> <!-- end col -->
+              </div> <!-- end row-->
+          </div> <!-- end card-->
+      </div> <!-- end col-->
+      <div class="col-lg-6">
+          <div class="card">
+              <div class="row g-0 align-items-center">
+                  <div class="col-md-8">
+                      <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div> <!-- end card-body -->
+                  </div> <!-- end col -->
+                  <div class="col-md-4">
+                      <img src="{{ '/public/images/small-1.jpg' | absolute_url }}" class="card-img" alt="...">
+                  </div> <!-- end col -->
+              </div> <!-- end row-->
+          </div> <!-- end card -->
+      </div> <!-- end col-->
+  </div>
+  <!-- end row -->
+
+  <div class="row">
+      <div class="col-12">
+          <h4 class="mb-4">Stretched link</h4>
+      </div> <!-- end col -->
+  </div>
+  <!-- end row -->
+
+  <div class="row">
+  	  {% for post in paginator.posts %}
+      <div class="col-sm-6 col-lg-4">
+          <div class="card">
+              <img src="{{ '/public/images/small-4.jpg' | absolute_url }}" class="card-img" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">{{ post.title }}</h5>
+                  <p class="card-text">
+                  {{ post.abstract }}
+                  </p>
+                  <p class="card-text">
+                  		<small class="text-muted">{{ post.date | date_to_string }}</small>
+                  </p>
+                  <a href="{{ post.url }}" class="btn btn-primary mt-2 stretched-link">Vai al laboratorio</a>
+              </div> <!-- end card-body -->
+          </div> <!-- end card -->
+      </div> <!-- end col-->
+      {% endfor %}
+  </div>
+  <!-- end row -->
+
+  
