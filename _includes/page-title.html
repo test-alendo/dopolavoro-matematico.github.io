@@ -5,7 +5,7 @@
                 <ol class="breadcrumb m-0">
                     <li class="breadcrumb-item"><a href="javascript: void(0);">Wikilabs</a></li>
                     {% if page.category != empty %}
-                    <li class="breadcrumb-item"><a href="/{{ page.categories[0] | slugify }}">{{ page.categories[0] }}</a></li>
+                    <li class="breadcrumb-item"><a href="/{{ page.categories[0] }}">{{ page.categories[0] }}</a></li>
                     {% endif %}
                     <li class="breadcrumb-item active">{{ page.title }}</li>
                 </ol>
