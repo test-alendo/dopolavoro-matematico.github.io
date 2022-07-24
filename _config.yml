@@ -5,7 +5,7 @@ description:         'A reserved <a href="https://jekyllrb.com" target="_blank">
 url:                 http://wikilabs.org
 baseurl:             ''
 paginate:            5
-permalink: 			 /:slugified_categories/:title:output_ext
+permalink: 			 /:categories/:title:output_ext
 
 # About/contact
 author:
