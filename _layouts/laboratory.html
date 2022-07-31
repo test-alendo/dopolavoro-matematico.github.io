@@ -2,8 +2,7 @@
 layout: default
 ---
 
-<div class="card">
-  
+<div class="card d-block">
   <div class="card-body">
 	  <dl class="row mb-0">
 	    <dt class="col-sm-3">Data di pubblicazione:</dt>
@@ -21,6 +20,8 @@ layout: default
 </div>
 
 <div class="card">
+	<img class="card-img-top" src="{{ '/public/images/' | append: page.image | absolute_url }}" alt="Card image cap">
+  
 	<div class="card-body">
 	{{ content }}
 	</div>
