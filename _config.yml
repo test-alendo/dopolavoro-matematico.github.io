@@ -6,6 +6,7 @@ url:                 https://dopolavoro-matematico.github.io/
 baseurl:             ''
 paginate:            5
 permalink: 			 /:year/:month/:day/:title:output_ext
+repository: 		 etcware/Dopolavoro-Matematico
 
 # About/contact
 author:
