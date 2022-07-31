@@ -1,10 +1,12 @@
 ---
 layout: laboratory
+lab_date: 2022-02-15
 categories: ['Laboratori dei bei problemi']
 title: Albergo con stanze infinite
 author: Alendo
 abstract: Questo è un abstract
 target: Studenti delle scuole secondarie e adulti
+duration: 30 min.
 image: albergo-con-stanze-infinte.jpg
 ---
 

@@ -8,10 +8,10 @@ layout: default
 
   {% if paginator.previous_page != nil or paginator.next_page != nil %}
     <!-- Show page number if we have multiple pages -->
-    <h1>Category index page {{ paginator.page }} / {{ paginator.total_pages }} for &ldquo;{{ page.title }}&rdquo;</h1>
+    <h1>{{ paginator.page }} / {{ paginator.total_pages }} for &ldquo;{{ page.title }}&rdquo;</h1>
   {% else %}
     <!-- No page number if we only have a single page -->
-    <h1>Category index for &ldquo;{{ page.title }}&rdquo;</h1>
+    <h1>{{ page.title }}</h1>
   {% endif %}
 
   <section>
@@ -20,7 +20,6 @@ layout: default
       <article>
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <h5>{{ post.date }}</h5>
-        <p>{{ post.excerpt }}</p>
       </article>
     {% endfor %}
   </section>

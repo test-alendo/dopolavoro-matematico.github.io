@@ -15,6 +15,7 @@ title: Esempio di laboratorio
 author: Alendo
 abstract: Questo è un abstract
 target: a chi è rivolto il laboratorio
+lab_date: 
 image: albergo-con-stanze-infinte.jpg
 ---
 ```
