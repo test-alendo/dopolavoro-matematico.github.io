@@ -11,44 +11,25 @@ title: Home
   <!-- end row -->
 
   <div class="row">
-      <div class="col-lg-6">
-          <div class="card">
-              <div class="row g-0 align-items-center">
-                  <div class="col-md-4">
-                      <img src="assets/images/small/small-4.jpg" class="card-img" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                      <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div> <!-- end card-body-->
-                  </div> <!-- end col -->
-              </div> <!-- end row-->
-          </div> <!-- end card-->
-      </div> <!-- end col-->
-      <div class="col-lg-6">
-          <div class="card">
-              <div class="row g-0 align-items-center">
-                  <div class="col-md-8">
-                      <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div> <!-- end card-body -->
-                  </div> <!-- end col -->
-                  <div class="col-md-4">
-                      <img src="{{ '/public/images/small-1.jpg' | absolute_url }}" class="card-img" alt="...">
-                  </div> <!-- end col -->
-              </div> <!-- end row-->
-          </div> <!-- end card -->
-      </div> <!-- end col-->
+     
+      {% for category in site.categories %}
+      <div class="col-md-4">
+    	 <div class="card border-primary border">
+             <div class="card-body">
+                 <h5 class="card-title text-primary">{{ category[0]}}</h5>
+                 <p class="card-text"></p>
+                 <a href="{{ site.url }}/category/{{category[0] | slugify }}/index.html" class="btn btn-primary btn-sm">Vai ai laboratori</a>
+             </div> <!-- end card-body-->
+         </div> <!-- end card-->
+      </div>
+      {% endfor %}
+      
   </div>
   <!-- end row -->
 
   <div class="row">
       <div class="col-12">
-          <h4 class="mb-4">Stretched link</h4>
+          <h4 class="mb-4">Gli ultimi laboratori</h4>
       </div> <!-- end col -->
   </div>
   <!-- end row -->
@@ -57,7 +38,9 @@ title: Home
   	  {% for post in paginator.posts %}
       <div class="col-sm-6 col-lg-4">
           <div class="card">
-              <img src="{{ '/public/images/small-4.jpg' | absolute_url }}" class="card-img" alt="...">
+          	  {% if post.image %}
+          	  <img src="{{ '/public/images/' | append: post.image | absolute_url }}" class="card-img" alt="...">
+              {% endif %}
               <div class="card-body">
                   <h5 class="card-title">{{ post.title }}</h5>
                   <p class="card-text">
