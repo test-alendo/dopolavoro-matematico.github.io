@@ -18,7 +18,7 @@
         	{% for category in site.categories %}
         	<li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebar{{ category[0] | slugify}}" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
-                    <i class="uil-clipboard-alt"></i>
+                    <i class="text-warning fa-regular fa-{{ category[0] | split: ' ' | last | slice: 0}}"></i>
                     <span> {{ category[0]}} </span>
                     <span class="menu-arrow"></span>
                 </a>
