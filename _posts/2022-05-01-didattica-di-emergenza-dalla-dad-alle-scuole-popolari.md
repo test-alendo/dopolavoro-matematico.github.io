@@ -2,9 +2,9 @@
 layout: laboratory
 lab_date: 2022-02-15
 categories: ['Laboratori assembleari']
-title: Didattica di emergenza\: dalla DAD alle scuole popolari
+title: Didattica di emergenza - dalla DAD alle scuole popolari
 author: Raffaele Cariati e Christian Raimo
-abstract: Che effetti ha avuto la pandemia sull’insegnamento della matematica (a ogni livello della formazione\: dalle scuole primarie fino all’università)? Come si è adattata la matematica alla DaD e chi ne ha più risentito? Che forma ha preso il mercato delle ripetizioni?
+abstract: Che effetti ha avuto la pandemia sull’insegnamento della matematica (a ogni livello della formazione - dalle scuole primarie fino all’università)? Come si è adattata la matematica alla DaD e chi ne ha più risentito? Che forma ha preso il mercato delle ripetizioni?
 target: studenti, insegnanti, cittadini, scuole popolari
 duration: 2 ora
 image: scuolepopolari-edited.jpg
