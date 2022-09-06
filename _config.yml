@@ -17,6 +17,7 @@ author:
 plugins:
   - jekyll-paginate
   - jekyll-category-pages
+  - jekyll-event-pages
 
 # Custom vars
 version:             0.1.0

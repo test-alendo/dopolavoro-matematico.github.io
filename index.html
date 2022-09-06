@@ -4,6 +4,27 @@ title: Home
 ---
   <div class="row">
       <div class="col-12">
+          <h4 class="mb-4">Laboratori per evento</h4>
+      </div> <!-- end col -->
+  </div>
+  <div class="row">
+     
+      {% for event in site.data["events"] %}
+      <div class="col-md-4">
+    	 <div class="card border-primary border">
+             <div class="card-body">
+                 <h5 class="card-title text-primary">{{ event[0]}}</h5>
+                 <p class="card-text"></p>
+                 <a href="{{ site.url }}/event/{{event[0] | slugify }}/index.html" class="btn btn-primary btn-sm">Vai ai laboratori</a>
+             </div> <!-- end card-body-->
+         </div> <!-- end card-->
+      </div>
+      {% endfor %}
+      
+  </div>
+  
+  <div class="row">
+      <div class="col-12">
           <h4 class="mb-4">Laboratori per tipo</h4>
       </div> <!-- end col -->
   </div>
