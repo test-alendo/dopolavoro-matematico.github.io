@@ -8,7 +8,7 @@ abstract: L’infinito è il pane quotidiano della matematica. I numeri, per far
 target: Studenti delle scuole secondarie e adulti
 duration: 30 min.
 image: albergo-con-stanze-infinte.jpg
-events: ["1 maggio matematico"]
+events: ["1 Maggio Matematico","9 Settembre 2022 - Estate romana matematica"]
 ---
 
 L’infinito è il pane quotidiano della matematica. I numeri, per fare l’esempio più ovvio, sono infiniti. 

@@ -10,20 +10,31 @@ Per inserire un laboratorio è necessario produrre un file di testo con le segue
 ```
 ---
 layout: laboratory
+title: inserire titolo
+author: inserire autore 
 categories: ['Laboratori del fare']
-title: Esempio di laboratorio
-author: Alendo
-abstract: Questo è un abstract
-target: a chi è rivolto il laboratorio
-lab_date: 
-image: albergo-con-stanze-infinte.jpg
+target: ad es. Tutti, famiglie, bambini (10 persone per volta)
+abstract: inserire abstract
+duration: inserire durata del laboratorio
+card_attach: inserire nome del file che contiene la scheda
+results_attach: ["file risultati","file risultati",...]
+events: ["evento 1","evento 2", ]
+image: file immagine
 ---
 ```
 * è possibile prevedere nuovi attributi. Ad esempio potremo aggiungere dati e informazioni di consuntivo, video ecc...
 
 * può essere inserita una descrizione del laboratorio dopo la chiusura delle linee.
 
-* per inserire un nuovo tipo di laboratorio è sufficiente inserire una nuova categoria in **categories**
+* per inserire un nuovo tipo di laboratorio è sufficiente inserire una nuova categoria in **categories**. Prima di inserire una nuova categoria verificare le categorie esistenti
+
+* i file attach devono essere caricati in public/attaches
+
+* le immagini devono essere caricate in public/images
+
+* i laboratori devono essere caricati in _posts
+
+Il sistema si autoconfigura rispetto a eventi e tipi di laboratori non appena caricato il file.
 
 ## Inline HTML elements
 

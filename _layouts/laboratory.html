@@ -5,23 +5,48 @@ layout: default
 <div class="card d-block">
   <div class="card-body">
 	  <dl class="row mb-0">
+	  	{% if page.date %}
 	    <dt class="col-sm-3">Data di pubblicazione:</dt>
 	    <dd class="col-sm-9"><span class="post-date">{{ page.date | date_to_string }}</span></dd>
+	    {% endif %}
+	    {% if page.lab_date %}
 	    <dt class="col-sm-3">Data laboratorio:</dt>
 	    <dd class="col-sm-9"><span class="post-date">{{ page.lab_date | date_to_string }}</span></dd>
+	    {% endif %}
+	    {% if page.author %}
 	    <dt class="col-sm-3">Autore/Autori:</dt>
 	    <dd class="col-sm-9">{{ page.author }}</dd>
+	    {% endif %}
+	    {% if page.target %}
 	    <dt class="col-sm-3">Pubblico:</dt>
 	    <dd class="col-sm-9">{{ page.target }}</dd>
+	    {% endif %}
+	    {% if page.duration %}
 	    <dt class="col-sm-3">Durata:</dt>
 	    <dd class="col-sm-9">{{ page.duration }}</dd>
+	    {% endif %}
+	    {% if page.card_attach %}
+	    <dt class="col-sm-3">Scheda:</dt>
+	    <dd class="col-sm-9"><a href="{{ '/public/attaches/' | append: page.card_attach | absolute_url }}">Descrizione laboratorio</a></dd>
+	    {% endif %}
+	    {% if page.results_attach %}
+	    <dt class="col-sm-3">Risultati:</dt>
+	    <dd class="col-sm-9">
+	    {% for result_attach in page.results_attach %}
+	    <a href="{{ '/public/attaches/' | append: page.result_attach | absolute_url }}">Risultati laboratorio</a>
+	    {% endfor %}
+	    </dd>
+	    {% endif %}
+	    
 	  </dl>
 	</div>
 </div>
 
 <div class="card">
+	{% if page.image %}
 	<img class="card-img-top" src="{{ '/public/images/' | append: page.image | absolute_url }}" alt="Card image cap">
-  
+    {% endif %}
+    
 	<div class="card-body">
 	{{ content }}
 	</div>
