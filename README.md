@@ -34,9 +34,11 @@ image: file immagine
 
 * è possibile prevedere nuovi attributi. Ad esempio potremo aggiungere dati e informazioni di consuntivo, video ecc...
 
-Il sistema si autoconfigura rispetto a eventi e tipi di laboratori non appena caricato il file.
+* Il sistema si autoconfigura rispetto a eventi e tipi di laboratori non appena caricato il file.
 
-Il testo dei laboratori può essere scritto usando il formato [markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). 
+* Il testo dei laboratori può essere scritto usando il formato [markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+
+* Per le immagini è meglio usare rapporto 16/9 
 
 ## Author
 
