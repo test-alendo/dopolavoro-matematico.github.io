@@ -25,9 +25,13 @@ layout: default
 	    <dt class="col-sm-3">Durata:</dt>
 	    <dd class="col-sm-9">{{ page.duration }}</dd>
 	    {% endif %}
-	    {% if page.card_attach %}
+	    {% if page.cards_attach %}
 	    <dt class="col-sm-3">Scheda:</dt>
-	    <dd class="col-sm-9"><a href="{{ '/public/attaches/' | append: page.card_attach | absolute_url }}">Descrizione laboratorio</a></dd>
+	    <dd class="col-sm-9">
+	    {% for card_attach in page.cards_attach %}
+	    <a href="{{ '/public/attaches/' | append: page.card_attach | absolute_url }}">Descrizione laboratorio</a>
+	    {% endfor %}
+	    </dd>
 	    {% endif %}
 	    {% if page.results_attach %}
 	    <dt class="col-sm-3">Risultati:</dt>
