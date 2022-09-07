@@ -5,19 +5,24 @@ title: Home
   <div class="row">
       <div class="col-12">
           <h4 class="mb-4">Laboratori per evento</h4>
-      </div> <!-- end col -->
+      </div>
   </div>
+  
   <div class="row">
      
       {% for event in site.data["events"] %}
       <div class="col-md-4">
-    	 <div class="card border-primary border">
-             <div class="card-body">
-                 <h5 class="card-title text-primary">{{ event[0]}}</h5>
-                 <p class="card-text"></p>
-                 <a href="{{ site.url }}/event/{{event[0] | slugify }}/index.html" class="btn btn-primary btn-sm">Vai ai laboratori</a>
-             </div> <!-- end card-body-->
-         </div> <!-- end card-->
+      	 <a href="{{ site.url }}/event/{{event[0] | slugify }}/index.html" class="text-white">
+	    	 <div class="card bg-info overflow-hidden">
+	             <div class="card-body">
+	             	 <div class="toll-free-box text-center">
+		                 <h4> <i class="text-warning fa-regular fa-{{ event[0] | split: ' ' | last | slice: 0}}"></i>
+							{{ event[0]}}
+						 </h4>
+					 </div>
+	              </div> <!-- end card-body-->
+	        </div> <!-- end card-->
+	     </a>
       </div>
       {% endfor %}
       
@@ -28,17 +33,22 @@ title: Home
           <h4 class="mb-4">Laboratori per tipo</h4>
       </div> <!-- end col -->
   </div>
+  
   <div class="row">
      
       {% for category in site.categories %}
       <div class="col-md-4">
-    	 <div class="card border-primary border">
-             <div class="card-body">
-                 <h5 class="card-title text-primary">{{ category[0]}}</h5>
-                 <p class="card-text"></p>
-                 <a href="{{ site.url }}/category/{{category[0] | slugify }}/index.html" class="btn btn-primary btn-sm">Vai ai laboratori</a>
-             </div> <!-- end card-body-->
-         </div> <!-- end card-->
+      	 <a href="{{ site.url }}/category/{{category[0] | slugify }}/index.html" class="text-white">
+	    	 <div class="card bg-success overflow-hidden">
+	             <div class="card-body">
+	             	 <div class="toll-free-box text-center">
+		                 <h4> <i class="text-warning fa-regular fa-{{ category[0] | split: ' ' | last | slice: 0}}"></i>
+							{{ category[0]}}
+						 </h4>
+					 </div>
+	              </div> <!-- end card-body-->
+	        </div> <!-- end card-->
+	     </a>
       </div>
       {% endfor %}
       
