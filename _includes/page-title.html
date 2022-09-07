@@ -3,7 +3,7 @@
         <div class="page-title-box">
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item"><a href="javascript: void(0);">Wikilabs</a></li>
+                    <li class="breadcrumb-item"><a href="{{ site.url }}">Wikilabs</a></li>
                     {% if page.categories[0].size > 1 %}
                     <li class="breadcrumb-item"><a href="{{ site.url }}/category/{{ page.categories[0] | slugify }}/index.html">{{ page.categories[0] }}</a></li>
                     {% endif %}
