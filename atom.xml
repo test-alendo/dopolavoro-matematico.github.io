@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Wikilabs</title>
+ <link href="https://www.wikilabs.org/atom.xml" rel="self"/>
+ <link href="https://www.wikilabs.org/"/>
+ <updated>2022-09-08T12:45:02+00:00</updated>
+ <id>https://www.wikilabs.org</id>
+ <author>
+   <name>etcware</name>
+   <email>a.donnini@etcware.it</email>
+ </author>
+
+ 
+ <entry>
+   <title>Didattica di emergenza - dalla DAD alle scuole popolari</title>
+   <link href="https://www.wikilabs.org/2022/05/01/didattica-di-emergenza-dalla-dad-alle-scuole-popolari.html"/>
+   <updated>2022-05-01T00:00:00+00:00</updated>
+   <id>https://www.wikilabs.org/2022/05/01/didattica-di-emergenza-dalla-dad-alle-scuole-popolari</id>
+   <content type="html">&lt;p&gt;Che effetti ha avuto la pandemia sull’insegnamento della matematica (a ogni livello della formazione: dalle scuole primarie fino all’università)? Come si è adattata la matematica alla DaD e chi ne ha più risentito? Che forma ha preso il mercato delle ripetizioni? Vogliamo raccogliere esperienze di studenti, insegnanti, genitori, e famiglie per capire quali sono i nuovi ostacoli alla trasmissione del sapere matematico e come scavalcarli.&lt;/p&gt;
+
+&lt;p&gt;Domenica a un tavolo di discussione aperta, Christian Raimo e Raffaele Cariati affronteranno gli argomenti della didattica in pandemia e insieme agli attivisti delle scuole popolari romane e alcuni docenti delle scuole per adulti ci racconteranno come si porta la matematica in quelle porzioni di città e tessuto sociale che altrimenti ne resterebbero prive. Frazioni, percentuali o proporzioni sono concetti matematici in cui ci imbattiamo quasi ogni giorno facendo la spesa o cucinando ma non sempre ce ne rendiamo conto. E che dire di termini come addendo o minuendo memorizzati da bambini e mai più usati? Riscoprirli può essere utile ad accorciare la distanza da una disciplina necessaria per essere cittadini critici e consapevoli?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Albergo con stanze infinite</title>
+   <link href="https://www.wikilabs.org/2022/05/01/albergo-con-stanze-infinite.html"/>
+   <updated>2022-05-01T00:00:00+00:00</updated>
+   <id>https://www.wikilabs.org/2022/05/01/albergo-con-stanze-infinite</id>
+   <content type="html">&lt;p&gt;L’infinito è il pane quotidiano della matematica. I numeri, per fare l’esempio più ovvio, sono infiniti. 
+Ma i matematici, nel corso dei secoli, hanno cambiato più volte idea intorno all’infinito. In questo laboratorio (ricalcato su un famoso esempio proposto da Hilbert), giocheremo con l’idea di infinito, tentando di sistemare comitive di clienti sempre più numerose in un albergo già pieno. Durante il gioco, misureremo quanto sono grandi diversi insiemi di numeri; sveleremo il comportamento bizzarro – ma non arbitrario – dell’infinito; e mostreremo come si usa la matematica per riuscire a pensare ciò che, a prima vista, appare impensabile.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Esperimenti col sapone</title>
+   <link href="https://www.wikilabs.org/2022/03/13/il-mappamondo-parallelo.html"/>
+   <updated>2022-03-13T00:00:00+00:00</updated>
+   <id>https://www.wikilabs.org/2022/03/13/il-mappamondo-parallelo</id>
+   <content type="html">&lt;p&gt;La leggenda della regina Didone e della fondazione di Cartagine sono lo spunto per esplorare il mondo dell’isoperimetria: qual è la forma geometrica più grande a parità di contorno? In questo viaggio, l’acqua saponata ci permetterà di vedere con i nostri occhi quello che Didone aveva intuito e di entrare nel mondo tridimensionale, dove ci stupiremo di come la natura sappia usare la matematica.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>I pentamini</title>
+   <link href="https://www.wikilabs.org/2022/03/13/i-pentamini.html"/>
+   <updated>2022-03-13T00:00:00+00:00</updated>
+   <id>https://www.wikilabs.org/2022/03/13/i-pentamini</id>
+   <content type="html">&lt;p&gt;Cercheremo e costruiremo insieme i pentamini e li useremo per risolvere puzzle di varie difficoltà, per giocare insieme e per approfondire aspetti interessanti della geometria.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Formule e quadri</title>
+   <link href="https://www.wikilabs.org/2022/03/13/formule-e-quadri.html"/>
+   <updated>2022-03-13T00:00:00+00:00</updated>
+   <id>https://www.wikilabs.org/2022/03/13/formule-e-quadri</id>
+   <content type="html">&lt;p&gt;L’aspetto estetico della matematica, ciò che possa/debba intendersi per “bello” nei due diversi domini. una lista numerata di dieci formule, dieci copie numerate di quadri astratti del ‘900.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Il mappamondo parallelo</title>
+   <link href="https://www.wikilabs.org/2022/03/13/esperimenti-col-sapone.html"/>
+   <updated>2022-03-13T00:00:00+00:00</updated>
+   <id>https://www.wikilabs.org/2022/03/13/esperimenti-col-sapone</id>
+   <content type="html">&lt;p&gt;In quali paesi sta sorgendo il Sole? In quali paesi è mezzogiorno? Dove il Sole è allo zenit adesso?&lt;/p&gt;
+
+&lt;p&gt;Possiamo vederlo su un Mappamondo Parallelo che è un globo libero dal suo supporto fisso, locale perché assume posizioni diverse in ogni paese, democratico perché a trovarsi in alto non sono sempre e solo i paesi dell’emisfero Nord.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Eclisse di sole in scala</title>
+   <link href="https://www.wikilabs.org/2022/03/13/eclisse-di-sole-in-scala.html"/>
+   <updated>2022-03-13T00:00:00+00:00</updated>
+   <id>https://www.wikilabs.org/2022/03/13/eclisse-di-sole-in-scala</id>
+   <content type="html">&lt;p&gt;Perché non si verifica un’eclisse di Sole ad ogni Luna Nuova? Perché se si verifica un’eclisse non si vede sempre in Italia?&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
